@@ -1,0 +1,20 @@
+run,args,highest_test_acc
+a0.1_aug300_s0,-activation elu -alpha 0.1 -num_epochs 300 -cosine -aug_shift 25 -aug_scale 0.1 -aug_noise 0.05 -seed 0,88.05555555555556
+a0.1_aug300_s2,-activation elu -alpha 0.1 -num_epochs 300 -cosine -aug_shift 25 -aug_scale 0.1 -aug_noise 0.05 -seed 2,87.87037037037037
+a0.1_aug300_s3,-activation elu -alpha 0.1 -num_epochs 300 -cosine -aug_shift 25 -aug_scale 0.1 -aug_noise 0.05 -seed 3,87.87037037037037
+a0.1_lr1e-3_300_s0,-activation elu -alpha 0.1 -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 0,87.77777777777777
+relu_lr1e-3_300_s0,-activation relu -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 0,87.68518518518519
+relu_aug300_s0,-activation relu -num_epochs 300 -cosine -aug_shift 25 -aug_scale 0.1 -aug_noise 0.05 -seed 0,87.5925925925926
+relu_lr1e-3_300_s2,-activation relu -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 2,87.5
+a0.1_aug300_s1,-activation elu -alpha 0.1 -num_epochs 300 -cosine -aug_shift 25 -aug_scale 0.1 -aug_noise 0.05 -seed 1,87.12962962962963
+a0.1_lr1e-3_300_s2,-activation elu -alpha 0.1 -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 2,87.12962962962963
+a0.1_lr1e-3_300_s3,-activation elu -alpha 0.1 -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 3,87.03703703703704
+relu_cos300_s0,-activation relu -num_epochs 300 -cosine -seed 0,86.85185185185185
+a0.1_ls_aug300_s0,-activation elu -alpha 0.1 -num_epochs 300 -cosine -label_smoothing 0.1 -aug_shift 25 -aug_noise 0.05 -seed 0,86.85185185185185
+a0.1_cos300_s0,-activation elu -alpha 0.1 -num_epochs 300 -cosine -seed 0,86.75925925925925
+relu_adamw_aug300_s0,-activation relu -optimizer adamw -weight_decay 0.01 -num_epochs 300 -cosine -aug_shift 25 -aug_noise 0.05 -seed 0,86.75925925925925
+relu_big_aug300_s0,-activation relu -F1 32 -D 2 -F2 64 -num_epochs 300 -cosine -aug_shift 25 -aug_noise 0.05 -seed 0,86.66666666666667
+relu_lr1e-3_300_s3,-activation relu -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 3,86.48148148148148
+a0.1_lr1e-3_300_s1,-activation elu -alpha 0.1 -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 1,86.38888888888889
+relu_lr1e-3_300_s1,-activation relu -lr 0.001 -weight_decay 0.0001 -num_epochs 300 -seed 1,86.01851851851852
+lrelu_cos300_s0,-activation leakyrelu -num_epochs 300 -cosine -seed 0,85.0
